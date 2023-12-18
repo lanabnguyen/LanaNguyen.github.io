@@ -1,0 +1,566 @@
+/* Reset margins and paddings */
+body, html, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Font styles */
+body {
+    font-family: 'Manrope', sans-serif;
+    line-height: 2;
+}
+
+h1, h2 {
+    font-family: 'PT Serif', serif;
+}
+
+body p {
+    line-height: 2; /* Adjusts the space between lines within a paragraph */
+    margin-bottom: 20px; /* Adjusts the space between paragraphs */
+    margin: 0;
+    padding: 0;
+}
+
+.features-container {
+    width: 100%; /* Full width of the viewport */
+    background-color: #303d40; /* Different background color for the section */
+}
+
+.features-container p {
+    color: white;
+}
+
+.feature-section {
+    display: flex;
+    align-items: center; /* Centers the content vertically */
+    justify-content: center; /* Centers the content horizontally */
+    padding: 20px 0; /* Top and bottom padding */
+    max-width: 800px; /* Or any maximum width you prefer */
+    margin: auto; /* Centers the section within the features-container */
+}
+
+.feature-image {
+    flex-basis: 40%; /* Gives the image a base width */
+    text-align: center; /* Centers the image within its container */
+}
+
+.feature-image img {
+    max-width: 100%; /* Ensures the image is responsive and doesn't overflow */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+.feature-content {
+    flex-basis: 60%; /* Gives the text content area a base width */
+    padding-left: 30px; /* Space between the image and the text */
+}
+
+.feature-content h2 {
+    margin-top: 0;
+    margin-bottom: 0.5em; /* Spacing between the title and the description */
+}
+
+.feature-content p {
+    margin-top: 0;
+}
+
+/* Title Styling */
+.features-container h2 {
+    text-align: center; /* Centers the title */
+    color: white; /* Sets the text color; adjust as needed */
+    font-size: 2em; /* Adjust the font size as needed */
+    margin-top: 20px; /* Space above the title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.full-width-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Even smaller min size for images */
+    gap: 15px; /* Slightly larger spacing between images */
+    padding-top: 40px; /* Padding around the gallery */
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0 40px; /* Increased horizontal margins for the gallery */
+    justify-content: center; /* Center grid items if they don't fill the entire width */
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three columns */
+    gap: 10px; /* Space between the thumbnails */
+    margin: 20px; /* Margin around the gallery */
+}
+
+.gallery-item {
+    cursor: pointer;
+    background-color: #eee; /* Placeholder in case of slow image loading */
+    aspect-ratio: 1 / 1; /* Ensures the item is square */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the square area */
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Manage overflow */
+    background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
+}
+
+.modal-content {
+    display: block; /* Ensure img tag is treated as block-level */
+    max-width: 80%; /* Maximum width of the image to fit the screen */
+    max-height: 80vh; /* Maximum height of the image */
+    margin: auto; /* Center the image horizontally */
+    object-fit: contain; /* This will ensure that the aspect ratio is maintained */
+}
+
+
+/* Header and footer styles */
+header{
+    padding: 50px; /* Increase padding */
+    text-align: center;
+    background-color: #fff;
+    color: white;
+    display: flex; /* Flexbox layout for the header */
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: center;
+}
+
+footer{
+    padding: 50px; /* Increase padding */
+    text-align: center;
+    background-color: #dfe2ed;
+    color: #303d40;
+    display: flex; /* Flexbox layout for the header */
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: center;
+}
+
+.site-logo {
+    height: 70px; /* Adjust the size as needed */
+    width: auto; /* Maintains the aspect ratio of the image */
+    /* Additional styling if needed */
+}
+
+.big-quote {
+    font-size: 1.5em; /* Larger font size */
+    font-style: italic; /* Italicize the quote */
+    margin: 20px 0; /* Add some space around the quote */
+    padding: 10px 20px; /* Padding inside the quote */
+    color: #333; /* Color of the quote text */
+}
+
+
+.carousel {
+    position: relative;
+    max-width: 800px; /* Adjust as needed */
+    height: 400px; /* Set a specific height for the carousel */
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-image {
+    max-width: 100%;
+    height: 100%; /* Make images take full height of the carousel */
+    object-fit: cover; /* Maintains aspect ratio and covers the area */
+}
+
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px; /* Adjust the size of the arrow */
+    z-index: 2;
+    color: #333; /* Arrow color */
+    border-radius: 50%; /* Circular buttons */
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+/* Homepage specific styles */
+.project-thumbnail {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 1em auto;
+}
+
+section {
+    margin: 2em 0;
+    text-align: center;
+}
+
+
+.project-section {
+    display: flex;
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    margin: 2em 0;
+    text-align: left; /* Align text to the left */
+    max-width: 800px; /* Maximum width of the section */
+    margin-left: auto; /* Auto margins for horizontal centering */
+    margin-right: auto;
+    margin-bottom: 4em;
+    margin-top: 4em;
+}
+
+
+.project-thumbnail-link {
+    display: inline-block; /* Make the link inline-block */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.project-thumbnail {
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.project-thumbnail:hover {
+    opacity: 0.7; /* Fade effect on hover */
+}
+
+
+.project-info {
+    padding-left: 80px;
+    flex: 1; /* Take up remaining space */
+}
+
+.project-info h2 {
+    margin-bottom: .5em; /* Adjust this value as needed */
+    /* Other styling for the title */
+}
+
+
+
+
+/* Rest of your CSS */
+
+
+.learn-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #a8a8a8; /* Cute gray color */
+    color: white; /* Text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    border: none; /* Remove any default border */
+}
+
+.learn-more-btn:hover {
+    background-color: #898989; /* Slightly darker gray on hover */
+    transform: translateY(-2px); /* Small lift effect */
+}
+
+
+/* Project page specific styles */
+.fullscreen-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-description-container {
+    display: flex;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    box-sizing: border-box;
+    justify-content: center; /* Center the flex items horizontally */
+    background-color: #dfe2ed;
+}
+
+.summary, .details {
+    width: 60%; /* Limiting the width */
+    line-height: 1.5; /* Increased line spacing */
+    padding: 0 20px; /* Padding on both sides */
+}
+
+.details {
+    border-left: 2px solid #000;
+}
+
+.bg-color-1 {
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+.blue {
+    background-color: #dfe2ed; /* light blue for summary */
+}
+
+
+
+.gray {
+    background-color: #e0e0e0; /* Slightly darker gray background */
+}
+
+
+.single-column-section {
+    padding: 40px 0; /* Padding on top and bottom */
+    display: flex;
+    justify-content: center; /* Center the content wrapper */
+    width: 100%; /* Full width of the viewport */
+}
+
+.content-wrapper {
+    max-width: 800px; /* Maximum width of the content */
+    width: 100%; /* Full width within the constraints of max-width */
+    padding: 0 20px; /* Padding on the sides */
+    box-sizing: border-box;
+}
+
+.content-wrapper h2 {
+    font-family: 'PT Serif', serif; /* Title font */
+    margin-bottom: 1em; /* Spacing after the title */
+    text-align: left; /* Align text to the left */
+}
+
+.content-wrapper p {
+    font-family: 'Manrope', sans-serif; /* Body text font */
+    line-height: 2; /* Spacing for the lines */
+    text-align: left; /* Align text to the left */
+    padding-bottom: 20px;
+}
+
+.content-wrapper img {
+    width: 100%; /* Full width of the container */
+    max-width: 800px; /* Maximum image width */
+    border-radius: 10px; /* Rounded corners for images */
+    margin: 0 auto; /* Center images within the section */
+    display: block;
+
+}
+
+
+
+.large-image {
+    width: 100%; /* Makes the image take the full width of its parent container */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes any default inline spacing */
+    max-width: 800px; /* You can adjust this value as needed */
+    margin: 0 auto; /* Centers the image if it's smaller than the parent container */
+}
+
+
+.responsive-image {
+    width: 80%; /* Makes the image full width */
+    height: auto; /* Maintains the aspect ratio of the image */
+    display: block; /* Removes any default inline spacing */
+    margin-left: auto; /* Left margin set to auto */
+    margin-right: auto; /* Right margin set to auto */
+}
+
+
+
+.image-container {
+    display: flex; /* Aligns children (images) in a row */
+    justify-content: space-between; /* Distributes space between images */
+    align-items: center; /* Aligns images vertically */
+    flex-wrap: nowrap; /* Prevents images from wrapping to the next line */
+    width: 100%; /* Ensures the container fits within its parent */
+    gap: 20px; /* Creates space between the images */
+}
+
+.image {
+    flex: 1; /* Allows the images to grow and fill the container */
+    max-width: calc(50% - 10px); /* Adjusts the image width, accounting for the gap */
+    height: auto; /* Keeps the aspect ratio of the images */
+    object-fit: cover; /* Adjusts the image size to cover the element's box */
+}
+
+
+
+
+
+
+
+h2 {
+    font-family: 'PT Serif', serif; /* Your chosen title font */
+    margin-bottom: 1em; /* Spacing under the title */
+}
+
+p {
+    font-family: 'Manrope', sans-serif; /* Your chosen body font */
+    line-height: 2;
+}
+
+p strong {
+    font-weight: bold; /* Make labels bold */
+}
+
+
+.illustrations-section {
+
+
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background for the section */
+}
+
+
+.moving-text-container {
+    padding: 50px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.moving-text-container::before, .moving-text-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15%; /* Width of the fading area */
+    z-index: 1;
+}
+
+.moving-text-container::before {
+    left: 0;
+    background: linear-gradient(to right, #f4f4f4, transparent);
+}
+
+.moving-text-container::after {
+    right: 0;
+    background: linear-gradient(to left, #f4f4f4, transparent);
+}
+
+.moving-text {
+    display: flex;
+    white-space: nowrap;
+    animation: moveText 20s linear infinite;
+}
+
+.moving-text p {
+    margin: 0; /* Remove margin for seamless connection between texts */
+}
+
+@keyframes moveText {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+.gate-shaped-illustration {
+    padding-top:50px;
+    width: 100%; /* Adjust based on your layout */
+    max-width: 600px; /* Maximum size of the illustration */
+    margin: 0 auto; /* Centering the illustration */
+    overflow: hidden; /* Hide parts of the image outside the shape */
+    display: flex; /* Using Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.gate-shaped-illustration img {
+    width: 60%;
+    height: auto;
+    display: block; /* Remove any extra spacing */
+    clip-path: ellipse(50% 100% at 50% 100%); /* Upside-down ellipse */
+}
+
+.more-projects-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    display: block;
+    max-width: 300px;
+    text-align: center; /* Center-align the project titles */
+    text-decoration: none; /* Remove default link underline */
+    color: inherit; /* Use the default text color */
+}
+
+.project-image {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
+    margin-top: 10px; /* Spacing between the image and the title */
+    font-size: 1.2em; /* Adjust the title font size */
+}
+
+
+.section-title {
+    position: relative;
+    overflow: hidden;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+.section-title.visible::after {
+    width: 100%;
+}
+
+.project-title-section {
+    background-color: #303d40;
+    text-align: center; /* Center-align the title */
+    padding: 50px 20px; /* Generous padding for spacing */
+    margin: 0 auto; /* Center the section */
+    box-sizing: border-box;
+}
+
+
+.project-title-section h1 {
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    font-size: 2.5em; /* Large font size for the title */
+    font-weight: bold; /* Optional: Makes the title bold */
+    color: white;
+    /* Add any additional styling you prefer for the title */
+}
+
+
+
+/* Smooth scroll for browsers that support it */
+html {
+    scroll-behavior: smooth;
+}
