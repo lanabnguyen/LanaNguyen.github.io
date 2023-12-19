@@ -562,6 +562,65 @@ p strong {
     /* Add any additional styling you prefer for the title */
 }
 
+@media screen and (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr; /* 1 column for very small screens */
+    }
+}
+@media screen and (max-width: 768px) {
+    .project-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-image, .feature-content {
+        flex-basis: auto;
+    }
+
+    .feature-content {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    h1, h2 {
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 768px) {
+    header, footer {
+        padding: 20px; /* Reduced padding */
+    }
+
+    .site-logo {
+        height: 50px; /* Adjust logo size */
+    }
+}
+.learn-more-btn {
+    padding: 12px 24px; /* Larger padding for easier touch */
+    font-size: 1em; /* Adjust font size if necessary */
+}
+@media screen and (max-width: 768px) {
+    .content-wrapper p, .content-wrapper h2 {
+        padding: 0 15px; /* Add padding on smaller screens */
+    }
+}
+@media screen and (max-width: 768px) {
+    .carousel {
+        max-width: 100%; /* Full width on small screens */
+        height: auto; /* Adjust height as necessary */
+    }
+
+    .carousel-image {
+        width: 100%; /* Ensure images are fully responsive */
+    }
+}
 
 
 /* Smooth scroll for browsers that support it */
