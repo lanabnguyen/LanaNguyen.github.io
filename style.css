@@ -271,7 +271,7 @@ section {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 10px;
-    background-color: #a8a8a8; /* Cute gray color */
+    background-color: #303d40; /* Cute gray color */
     color: white; /* Text color */
     text-decoration: none;
     border-radius: 5px;
@@ -452,12 +452,12 @@ p strong {
 
 .moving-text-container::before {
     left: 0;
-    background: linear-gradient(to right, #f4f4f4, transparent);
+    background: linear-gradient(to right, #303d40, transparent);
 }
 
 .moving-text-container::after {
     right: 0;
-    background: linear-gradient(to left, #f4f4f4, transparent);
+    background: linear-gradient(to left, #303d40, transparent);
 }
 
 .moving-text {
@@ -486,7 +486,7 @@ p strong {
 }
 
 .gate-shaped-illustration img {
-    width: 60%;
+    width: 100%;
     height: auto;
     display: block; /* Remove any extra spacing */
     clip-path: ellipse(50% 100% at 50% 100%); /* Upside-down ellipse */
