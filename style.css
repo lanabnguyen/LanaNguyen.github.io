@@ -426,7 +426,7 @@ p strong {
 
     text-align: center;
     padding: 20px;
-    background-color: #f4f4f4; /* Light background for the section */
+    background-color: #303d40; /* Light background for the section */
 }
 
 
@@ -435,6 +435,10 @@ p strong {
     overflow: hidden;
     position: relative;
     width: 100%;
+}
+
+.moving-text-container p {
+    color: white;
 }
 
 .moving-text-container::before, .moving-text-container::after {
