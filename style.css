@@ -631,3 +631,24 @@ p strong {
 html {
     scroll-behavior: smooth;
 }
+
+@media screen and (max-width: 768px) {
+    .moving-text-container {
+        padding: 20px; /* Reduced padding for smaller screens */
+    }
+
+    .moving-text-container::before, .moving-text-container::after {
+        width: 10%; /* Narrower fading areas */
+    }
+
+    .moving-text {
+        animation-duration: 10s; /* Speed up the text movement */
+    }
+}
+@media screen and (max-width: 768px) {
+    .gate-shaped-illustration {
+        max-width: 100%; /* Allow the illustration to take full width on small screens */
+        padding-top: 30px; /* Adjust padding for mobile */
+    }
+}
+
