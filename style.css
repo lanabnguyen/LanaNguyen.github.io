@@ -429,6 +429,10 @@ p strong {
     background-color: #303d40; /* Light background for the section */
 }
 
+.illustrations-section h2 {
+    color: white;
+}
+
 
 .moving-text-container {
     padding: 50px;
