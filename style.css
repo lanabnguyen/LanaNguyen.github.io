@@ -638,7 +638,7 @@ html {
     }
 
     .moving-text-container::before, .moving-text-container::after {
-        width: 7%; /* Narrower fading areas */
+        width: 5%; /* Narrower fading areas */
     }
 
     .moving-text {
