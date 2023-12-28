@@ -637,9 +637,7 @@ html {
         padding: 20px; /* Reduced padding for smaller screens */
     }
 
-    .moving-text-container::before, .moving-text-container::after {
-        width: 5%; /* Narrower fading areas */
-    }
+
 
     .moving-text {
         animation-duration: 10s; /* Speed up the text movement */
