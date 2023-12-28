@@ -435,14 +435,10 @@ p strong {
 
 
 .moving-text-container {
-    padding: 50px;
-    overflow: hidden;
     position: relative;
-    width: 100%;
-}
-
-.moving-text-container p {
-    color: white;
+    box-sizing: border-box; /* Include padding and borders in the element's total width */
+    overflow: hidden; /* This will prevent any child elements from causing the container to overflow */
+    /* ... rest of your styles ... */
 }
 
 .moving-text-container::before, .moving-text-container::after {
@@ -463,6 +459,7 @@ p strong {
     right: 0;
     background: linear-gradient(to left, #303d40, transparent);
 }
+
 
 .moving-text {
     display: flex;
