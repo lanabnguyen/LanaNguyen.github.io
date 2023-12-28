@@ -435,6 +435,7 @@ p strong {
 
 
 .moving-text-container {
+    padding: 50px;
     position: relative;
     box-sizing: border-box; /* Include padding and borders in the element's total width */
     overflow: hidden; /* This will prevent any child elements from causing the container to overflow */
@@ -469,6 +470,7 @@ p strong {
 
 .moving-text p {
     margin: 0; /* Remove margin for seamless connection between texts */
+    color: white;
 }
 
 @keyframes moveText {
