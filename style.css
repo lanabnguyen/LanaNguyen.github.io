@@ -11,7 +11,7 @@ body {
 }
 
 h1, h2 {
-    font-family: 'PT Serif', serif;
+    font-family: 'Inter Tight', serif;
 }
 
 body p {
@@ -21,6 +21,8 @@ body p {
     padding: 0;
 }
 
+
+
 .features-container {
     width: 100%; /* Full width of the viewport */
     background-color: #303d40; /* Different background color for the section */
@@ -29,6 +31,10 @@ body p {
 .features-container p {
     color: white;
 }
+
+.large-font {
+            font-size: 24px; /* Adjust the size as needed */
+        }
 
 .feature-section {
     display: flex;
@@ -342,7 +348,7 @@ section {
 }
 
 .content-wrapper h2 {
-    font-family: 'PT Serif', serif; /* Title font */
+    font-family: 'Inter Tight', serif; /* Title font */
     margin-bottom: 1em; /* Spacing after the title */
     text-align: left; /* Align text to the left */
 }
@@ -407,7 +413,7 @@ section {
 
 
 h2 {
-    font-family: 'PT Serif', serif; /* Your chosen title font */
+    font-family: 'Inter Tight', serif; /* Your chosen title font */
     margin-bottom: 1em; /* Spacing under the title */
 }
 
